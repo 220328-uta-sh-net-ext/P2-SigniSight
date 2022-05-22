@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A9Lv6iTJb5OjaQbtIFDdlO8CuUq8amr33IxKjPOGgA68Kss+mBW3CAJM9/kqE2Vf4bINGZ7GyX9TYoyddckrdg==",
+  "dgSpecHash": "nL1f8Fyn/Jip5s+vKLE7ZFWV4JMWEMQ9u+B0hsHaVxp0NuHwE5OhpuaxBz2H5pH/dqcrc/iAii2NxnqYDJ1CVw==",
   "success": true,
-  "projectFilePath": "C:\\Revature\\P2-SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightBL\\SigniSightBL.csproj",
+  "projectFilePath": "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\SigniSightBL\\SigniSightBL.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

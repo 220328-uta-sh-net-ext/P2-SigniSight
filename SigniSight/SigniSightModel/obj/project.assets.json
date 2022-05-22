@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\P2-SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightModel\\SigniSightModel.csproj",
+      "projectUniqueName": "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\SigniSightModel\\SigniSightModel.csproj",
       "projectName": "SigniSightModel",
-      "projectPath": "C:\\Revature\\P2-SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightModel\\SigniSightModel.csproj",
+      "projectPath": "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\SigniSightModel\\SigniSightModel.csproj",
       "packagesPath": "C:\\Users\\emeli\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\P2-SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightModel\\obj\\",
+      "outputPath": "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\SigniSightModel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\emeli\\AppData\\Roaming\\NuGet\\NuGet.Config",

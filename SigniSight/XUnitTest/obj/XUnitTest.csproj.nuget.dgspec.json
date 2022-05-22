@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Revature\\P2-SigniSight_Fork\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj": {}
+    "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\XUnitTest\\XUnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Revature\\P2-SigniSight_Fork\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj": {
+    "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\XUnitTest\\XUnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Revature\\P2-SigniSight_Fork\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj",
+        "projectUniqueName": "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\XUnitTest\\XUnitTest.csproj",
         "projectName": "XUnitTest",
-        "projectPath": "C:\\Revature\\P2-SigniSight_Fork\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj",
+        "projectPath": "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\XUnitTest\\XUnitTest.csproj",
         "packagesPath": "C:\\Users\\emeli\\.nuget\\packages\\",
-        "outputPath": "C:\\Revature\\P2-SigniSight_Fork\\P2-SigniSight\\SigniSight\\XUnitTest\\obj\\",
+        "outputPath": "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\XUnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emeli\\AppData\\Roaming\\NuGet\\NuGet.Config",

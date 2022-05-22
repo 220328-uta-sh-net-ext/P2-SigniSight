@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qIGzpRFrombhdwD1seFAa0XHbqyHf6AxKGmG4GUUDsTVXCftIEFjSq/n9jQGPFDE84Rin3Lf2T8vhqoxthDpGA==",
+  "dgSpecHash": "V4GIqzyNykZz0/InnO+lKZGTmTPUeM5aD6rbp3XkyxCiBbzEeJRhtXvS9cDrBu09ejAiCmiRXlzQnQvmZ4+0TQ==",
   "success": true,
-  "projectFilePath": "C:\\Revature\\P2-SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightAPI\\SigniSightAPI.csproj",
+  "projectFilePath": "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\SigniSightAPI\\SigniSightAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emeli\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\emeli\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
