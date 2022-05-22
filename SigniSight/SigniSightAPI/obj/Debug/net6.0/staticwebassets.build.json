@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kcTZ2x0gpb8dMgacicQGenM57h6iSTbO8n7xjJ2oo88=",
+  "Source": "SigniSightAPI",
+  "BasePath": "_content/SigniSightAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
