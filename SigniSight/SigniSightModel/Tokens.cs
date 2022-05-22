@@ -1,6 +1,6 @@
 ﻿namespace SigniSightModel
 {
-    public class Class1
+    public class Tokens
     {
 
     }
