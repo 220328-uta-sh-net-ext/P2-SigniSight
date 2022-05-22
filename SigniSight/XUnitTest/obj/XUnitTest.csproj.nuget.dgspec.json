@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\XUnitTest\\XUnitTest.csproj": {}
+    "C:\\Users\\royzo\\Desktop\\Projects\\Revature\\briceson-roy\\P2-Clone\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\XUnitTest\\XUnitTest.csproj": {
+    "C:\\Users\\royzo\\Desktop\\Projects\\Revature\\briceson-roy\\P2-Clone\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\XUnitTest\\XUnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\royzo\\Desktop\\Projects\\Revature\\briceson-roy\\P2-Clone\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj",
         "projectName": "XUnitTest",
-        "projectPath": "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\XUnitTest\\XUnitTest.csproj",
-        "packagesPath": "C:\\Users\\emeli\\.nuget\\packages\\",
-        "outputPath": "C:\\Revature\\P2-SigniSight_Fork\\SigniSight\\XUnitTest\\obj\\",
+        "projectPath": "C:\\Users\\royzo\\Desktop\\Projects\\Revature\\briceson-roy\\P2-Clone\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj",
+        "packagesPath": "C:\\Users\\royzo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\royzo\\Desktop\\Projects\\Revature\\briceson-roy\\P2-Clone\\P2-SigniSight\\SigniSight\\XUnitTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\emeli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\royzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
