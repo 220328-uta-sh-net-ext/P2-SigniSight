@@ -295,19 +295,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emeli\\.nuget\\packages\\": {}
+    "C:\\Users\\danny\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightAPI\\SigniSightAPI.csproj",
       "projectName": "SigniSightAPI",
       "projectPath": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightAPI\\SigniSightAPI.csproj",
       "packagesPath": "C:\\Users\\emeli\\.nuget\\packages\\",
       "outputPath": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightAPI\\obj\\",
+=======
+      "projectUniqueName": "C:\\Revature\\Project-2\\Signisight\\P2-SigniSight\\SigniSight\\SigniSightAPI\\SigniSightAPI.csproj",
+      "projectName": "SigniSightAPI",
+      "projectPath": "C:\\Revature\\Project-2\\Signisight\\P2-SigniSight\\SigniSight\\SigniSightAPI\\SigniSightAPI.csproj",
+      "packagesPath": "C:\\Users\\danny\\.nuget\\packages\\",
+      "outputPath": "C:\\Revature\\Project-2\\Signisight\\P2-SigniSight\\SigniSight\\SigniSightAPI\\obj\\",
+>>>>>>> 3944685fc3ef9864585998fe1e23e6fee1a1ac73
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\emeli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
