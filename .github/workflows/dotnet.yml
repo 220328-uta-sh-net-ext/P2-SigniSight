@@ -1,0 +1,29 @@
+name: .NET
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  WORKING_DIRECTORY: SigniSight
+
+jobs:
+  ci:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore ${{env.WORKING_DIRECTORY}}
+    - name: Build
+      run: dotnet build --no-restore ${{env.WORKING_DIRECTORY}}
+    - name: Test
+      run: dotnet test --no-build --verbosity normal ${{env.WORKING_DIRECTORY}}
