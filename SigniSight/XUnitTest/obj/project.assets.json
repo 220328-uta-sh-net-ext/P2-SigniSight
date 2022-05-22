@@ -5978,11 +5978,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\SigniSightDraft\\XUnitTest\\XUnitTest.csproj",
+      "projectUniqueName": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj",
       "projectName": "XUnitTest",
-      "projectPath": "C:\\Revature\\SigniSightDraft\\XUnitTest\\XUnitTest.csproj",
+      "projectPath": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj",
       "packagesPath": "C:\\Users\\emeli\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\SigniSightDraft\\XUnitTest\\obj\\",
+      "outputPath": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\XUnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\emeli\\AppData\\Roaming\\NuGet\\NuGet.Config",

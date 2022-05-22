@@ -300,11 +300,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\SigniSightDraft\\SigniSightAPI\\SigniSightAPI.csproj",
+      "projectUniqueName": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightAPI\\SigniSightAPI.csproj",
       "projectName": "SigniSightAPI",
-      "projectPath": "C:\\Revature\\SigniSightDraft\\SigniSightAPI\\SigniSightAPI.csproj",
+      "projectPath": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightAPI\\SigniSightAPI.csproj",
       "packagesPath": "C:\\Users\\emeli\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\SigniSightDraft\\SigniSightAPI\\obj\\",
+      "outputPath": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\emeli\\AppData\\Roaming\\NuGet\\NuGet.Config",

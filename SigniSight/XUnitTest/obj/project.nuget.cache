@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y1zpnE3haev3tXzmWkDlDY8elHlIvk/C96HcJh9SKQV4FgAGzCIRbDfty1ktYc0zbhzoDOzIPtG4PmmUdnoneQ==",
+  "dgSpecHash": "xRpJdoyjuRVSquIRiWPlBRkdrB3WZUokFjO0auCZkTcSdDRGq1Xs+6nuaOpqdrn/x/un0VYiOBO//bQt7QCSWg==",
   "success": true,
-  "projectFilePath": "C:\\Revature\\SigniSightDraft\\XUnitTest\\XUnitTest.csproj",
+  "projectFilePath": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emeli\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\emeli\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

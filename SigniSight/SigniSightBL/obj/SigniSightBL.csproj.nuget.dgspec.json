@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Revature\\SigniSightDraft\\SigniSightBL\\SigniSightBL.csproj": {}
+    "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightBL\\SigniSightBL.csproj": {}
   },
   "projects": {
-    "C:\\Revature\\SigniSightDraft\\SigniSightBL\\SigniSightBL.csproj": {
+    "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightBL\\SigniSightBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Revature\\SigniSightDraft\\SigniSightBL\\SigniSightBL.csproj",
+        "projectUniqueName": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightBL\\SigniSightBL.csproj",
         "projectName": "SigniSightBL",
-        "projectPath": "C:\\Revature\\SigniSightDraft\\SigniSightBL\\SigniSightBL.csproj",
+        "projectPath": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightBL\\SigniSightBL.csproj",
         "packagesPath": "C:\\Users\\emeli\\.nuget\\packages\\",
-        "outputPath": "C:\\Revature\\SigniSightDraft\\SigniSightBL\\obj\\",
+        "outputPath": "C:\\Revature\\SigniSight_Fork\\P2-SigniSight\\SigniSight\\SigniSightBL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emeli\\AppData\\Roaming\\NuGet\\NuGet.Config",
