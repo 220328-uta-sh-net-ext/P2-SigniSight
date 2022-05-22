@@ -5973,19 +5973,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emeli\\.nuget\\packages\\": {}
+    "C:\\Users\\danny\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\SigniSightDraft\\XUnitTest\\XUnitTest.csproj",
+      "projectUniqueName": "C:\\Revature\\Project-2\\Signisight\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj",
       "projectName": "XUnitTest",
-      "projectPath": "C:\\Revature\\SigniSightDraft\\XUnitTest\\XUnitTest.csproj",
-      "packagesPath": "C:\\Users\\emeli\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\SigniSightDraft\\XUnitTest\\obj\\",
+      "projectPath": "C:\\Revature\\Project-2\\Signisight\\P2-SigniSight\\SigniSight\\XUnitTest\\XUnitTest.csproj",
+      "packagesPath": "C:\\Users\\danny\\.nuget\\packages\\",
+      "outputPath": "C:\\Revature\\Project-2\\Signisight\\P2-SigniSight\\SigniSight\\XUnitTest\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\emeli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
