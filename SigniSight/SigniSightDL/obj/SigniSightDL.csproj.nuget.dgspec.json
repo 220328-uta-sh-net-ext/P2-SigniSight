@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Revature\\SigniSightDraft\\SigniSightDL\\SigniSightDL.csproj": {}
+    "C:\\Revature\\Project-2\\Signisight\\P2-SigniSight\\SigniSight\\SigniSightDL\\SigniSightDL.csproj": {}
   },
   "projects": {
-    "C:\\Revature\\SigniSightDraft\\SigniSightDL\\SigniSightDL.csproj": {
+    "C:\\Revature\\Project-2\\Signisight\\P2-SigniSight\\SigniSight\\SigniSightDL\\SigniSightDL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Revature\\SigniSightDraft\\SigniSightDL\\SigniSightDL.csproj",
+        "projectUniqueName": "C:\\Revature\\Project-2\\Signisight\\P2-SigniSight\\SigniSight\\SigniSightDL\\SigniSightDL.csproj",
         "projectName": "SigniSightDL",
-        "projectPath": "C:\\Revature\\SigniSightDraft\\SigniSightDL\\SigniSightDL.csproj",
-        "packagesPath": "C:\\Users\\emeli\\.nuget\\packages\\",
-        "outputPath": "C:\\Revature\\SigniSightDraft\\SigniSightDL\\obj\\",
+        "projectPath": "C:\\Revature\\Project-2\\Signisight\\P2-SigniSight\\SigniSight\\SigniSightDL\\SigniSightDL.csproj",
+        "packagesPath": "C:\\Users\\danny\\.nuget\\packages\\",
+        "outputPath": "C:\\Revature\\Project-2\\Signisight\\P2-SigniSight\\SigniSight\\SigniSightDL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\emeli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\danny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
