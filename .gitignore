@@ -421,7 +421,7 @@ obj/
 # Ignore all local history of files
 .history
 .ionide
-
+.cache
 # Support for Project snippet scope
 
 ### VisualStudio ###
