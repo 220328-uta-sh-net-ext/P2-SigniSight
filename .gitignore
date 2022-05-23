@@ -422,6 +422,8 @@ obj/
 .history
 .ionide
 .cache
+.editorconfig
+
 # Support for Project snippet scope
 
 ### VisualStudio ###
