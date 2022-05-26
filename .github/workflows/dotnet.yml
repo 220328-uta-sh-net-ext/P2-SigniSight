@@ -53,7 +53,7 @@ jobs:
       with:
         context: ${{env.WORKING_DIRECTORY}}
         # Path to the Dockerfile
-        file: ${{env.WORKING_DIRECTORY}}/SigniSightApi/Dockerfile
+        file: ${{env.WORKING_DIRECTORY}}/SigniSightAPI/Dockerfile
         # Push is a shorthand for --output=type=registry
         push: true
         # List of tags
