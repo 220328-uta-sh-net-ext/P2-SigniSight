@@ -8,8 +8,10 @@ namespace SigniSightAPI.Controllers
     [ApiController]
     public class OCRController : ControllerBase
     {
-        const string subscriptionKey = "????????????";
-        const string endpoint = "https://*.cognitiveservices.azure.com/";
+        static string subscriptionKeyFilePath = "../SigniSightAPI/Controllers/OCRKey.txt";
+        static string subscriptionKey = System.IO.File.ReadAllText(subscriptionKeyFilePath);
+        static string endpointFilePath = "../SigniSightAPI/Controllers/OCREndpoint.txt";
+        static string endpoint = System.IO.File.ReadAllText(endpointFilePath);
         ComputerVisionClient client = Authenticate(endpoint, subscriptionKey);
         public static ComputerVisionClient Authenticate(string endpoint, string key)
         {
