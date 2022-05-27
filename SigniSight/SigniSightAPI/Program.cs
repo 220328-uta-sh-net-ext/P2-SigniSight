@@ -8,8 +8,8 @@ using Newtonsoft.Json;
 using SigniSightDL;
 using SigniSightBL;
 
-
-string connectionStringFilePath = "C:/Revature/P2-SigniSight_Fork/SigniSight/SigniSightDL/connectionString.txt";
+//Connection string file path should be relative. It will break program if your path is different
+string connectionStringFilePath = "../SigniSightDL/connection-string.txt";
 string connectionString = File.ReadAllText(connectionStringFilePath);
 
 var builder = WebApplication.CreateBuilder(args);
