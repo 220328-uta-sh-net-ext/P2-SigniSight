@@ -2,8 +2,8 @@
 const axios = require('axios').default;
 const { v4: uuidv4 } = require('uuid');
 
-var key = "5fa20909ba90476c9edec0bafa9b8717";
-var endpoint = "https://api.cognitive.microsofttranslator.com";
+var key = "C:/Revature/P2-SigniSight_Fork/SigniSight/Key.txt";
+var endpoint = "C:/Revature/P2-SigniSight_Fork/SigniSight/Endpoint.txt";
 
 // Add your location, also known as region. The default is global.
 // This is required if using a Cognitive Services resource.
