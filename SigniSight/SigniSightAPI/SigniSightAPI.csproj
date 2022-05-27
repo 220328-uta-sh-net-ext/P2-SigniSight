@@ -9,9 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="6.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+||||||| 0b55246
+=======
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.ComputerVision" Version="7.0.1" />
+>>>>>>> bf69d9f84122b825694fd86869befed8c1aa27ba
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.5">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
@@ -25,6 +30,7 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
   </ItemGroup>
 
+<<<<<<< HEAD
   <ItemGroup>
     <ProjectReference Include="..\SigniSightBL\SigniSightBL.csproj" />
     <ProjectReference Include="..\SigniSightDL\SigniSightDL.csproj" />
@@ -33,4 +39,11 @@
     <ProjectReference Include="..\XUnitTest\XUnitTest.csproj" />
   </ItemGroup>
 
+||||||| 0b55246
+=======
+  <ItemGroup>
+    <ProjectReference Include="..\SigniSightBL\SigniSightBL.csproj" />
+  </ItemGroup>
+
+>>>>>>> bf69d9f84122b825694fd86869befed8c1aa27ba
 </Project>
