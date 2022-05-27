@@ -609,3 +609,7 @@ obj/
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/dotnetcore,visualstudiocode,csharp,visualstudio
+/SigniSight/SigniSightAPI/Controllers/OCREndpoint.txt
+/SigniSight/SigniSightAPI/Controllers/OCRKey.txt
+/SigniSight/SigniSightBL/TranslateKey.txt
+/SigniSight/SigniSightBL/TranslateLocation.txt

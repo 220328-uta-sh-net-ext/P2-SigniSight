@@ -8,9 +8,10 @@ namespace SigniSightAPI.Controllers
     {
         //[Authorize]
         [HttpPost("Translate")]
-        public async Task<ActionResult<string>> TranslateText(string textToTranslate)
+        public async Task<ActionResult<string>> TranslateText(string textToTranslate, string endLanguageCode)
         {
-            var result = await TranslateProcessor.TranslateText(textToTranslate);
+            endLanguageCode = endLanguageCode.Trim();
+            var result = await TranslateProcessor.TranslateText(textToTranslate, endLanguageCode);
             return Ok(result);
         }
     }  

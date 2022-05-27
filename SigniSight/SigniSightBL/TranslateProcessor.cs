@@ -5,12 +5,16 @@ namespace SigniSightBL
 {
     public class TranslateProcessor
     {
-        private static readonly string key = "?????????????????????";
+        static string subscriptionKeyFilePath = "../SigniSightBL/TranslateKey.txt";
+        static string key = System.IO.File.ReadAllText(subscriptionKeyFilePath);
+        static string endpointFilePath = "../SigniSightBL/TranslateLocation.txt";
+        static string location = System.IO.File.ReadAllText(endpointFilePath);
         private static readonly string endpointTranslate = "https://api.cognitive.microsofttranslator.com/";
-        private static readonly string location = "????????";
-        private static string route = "/translate?api-version=3.0&to=ru&to=en&to=pl"; //change it to variable
-        public static async Task<string> TranslateText(string textToTranslate)
+       // private static string route = "/translate?api-version=3.0&to=en"; //change it to variable
+        public static async Task<string> TranslateText(string textToTranslate, string language)
         {
+            string route = $"/translate?api-version=3.0&to={language}";
+            //language += "&to="; 
             object[] body = new object[] { new { Text = textToTranslate } };
             var requestBody = JsonConvert.SerializeObject(body);
             var client2 = new HttpClient();
