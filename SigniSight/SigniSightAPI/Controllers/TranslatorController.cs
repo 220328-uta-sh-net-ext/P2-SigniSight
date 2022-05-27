@@ -1,27 +1,17 @@
-using System;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Net.Http;
-using System.Collections.Generic;
-using Newtonsoft.Json;
+using SigniSightBL;
 
 namespace SigniSightAPI.Controllers
 {
-  [Route("api/[controller]")]
-  [ApiController]
-
-  
-
-  public class TranslatorController : ControllerBase
-  {
-    
-  }
-  
-
-
-  //is getting post request from user of the text they want to translate
-  /*public ActionResult TranslateText()
-  {
-    
-  }*/
+    [ApiController]
+    public class TranslatorController : ControllerBase
+    {
+        //[Authorize]
+        [HttpPost("Translate")]
+        public async Task<ActionResult<string>> TranslateText(string textToTranslate)
+        {
+            var result = await TranslateProcessor.TranslateText(textToTranslate);
+            return Ok(result);
+        }
+    }  
 }
