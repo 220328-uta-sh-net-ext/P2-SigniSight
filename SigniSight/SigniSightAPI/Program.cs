@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using SigniSightDL;
 using SigniSightBL;
-using SigniSightAPI.Repository;
+
 
 string connectionStringFilePath = "C:/Revature/P2-SigniSight_Fork/SigniSight/SigniSightDL/connectionString.txt";
 string connectionString = File.ReadAllText(connectionStringFilePath);
@@ -62,7 +62,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IRepo>(repo => new SqlRepo(config.GetConnectionString("connectionString")));
 
 builder.Services.AddScoped<ILogic, Logic>();
-builder.Services.AddSingleton<IJWTManagerRepo, JWTManagerRepo>();
+
 
 var app = builder.Build();
 

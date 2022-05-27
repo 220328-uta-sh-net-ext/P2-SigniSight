@@ -16,8 +16,8 @@ namespace SigniSightAPI.Controllers
   {
     
   }
-  [HttpPost]
-  [ProducesResponseType(StatusCodes.Status201Created)]
+  
+
 
   //is getting post request from user of the text they want to translate
   /*public ActionResult TranslateText()
