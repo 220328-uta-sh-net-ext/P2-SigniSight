@@ -1,4 +1,4 @@
-﻿using System.Data.SqlClient;
+using System.Data.SqlClient;
 using System.Data;
 using System;
 using System.Collections.Generic;
@@ -65,4 +65,20 @@ namespace SigniSightDL
             return users;
         }
     }
+       /* static public async Task TranslateText()
+        {
+            object[] body = new object[] { new { Text = inputText } };
+            var requestBody = JsonConvert.SerializeObject(body);
+
+            using (var client = new HttpClient())
+            using (var request = new HttpRequestMessage())
+            {
+              request.Method = HttpMethod.Post;
+              request.RequestUri = new Uri(endpoint + route);
+              request.Content = new StringContent(requestBody, Encoding.UTF8, "application/json");
+              request.Headers.Add("Ocp-Apim-Subscription-Key", subscriptionKey);
+              request.Headers.Add("Ocp-Apim-Subscription-Region", region);
+            }
+        }*/
+
 }

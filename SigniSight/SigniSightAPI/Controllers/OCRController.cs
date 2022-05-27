@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.CognitiveServices.Vision.ComputerVision;
 using static SigniSightBL.Logic;
@@ -28,3 +28,4 @@ namespace SigniSightAPI.Controllers
         }
     }
 }
+
