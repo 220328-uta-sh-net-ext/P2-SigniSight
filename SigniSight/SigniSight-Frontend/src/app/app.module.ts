@@ -9,18 +9,25 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PersonComponent } from './person/person.component';
 import { RosterComponent } from './roster/roster.component';
 
+import { TranslationComponent } from './translation/translation.component';
+import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     NavbarComponent,
     PersonComponent,
-    RosterComponent
+    RosterComponent,
+    TranslationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule 
+    FormsModule ,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
