@@ -1,0 +1,27 @@
+<section id="camera-area">
+  <div id="drop-area">
+    <form class="my-form">
+      <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+      <label class="button" for="fileElem">Select image</label>
+    </form>
+
+    <div id="gallery"></div>
+
+  </div>
+
+  <div id="translation-card" style="display:none"></div>
+
+  <button id="translate-button" onclick="translation()">TRANSLATE</button>
+</section>
+
+<form id = "translation" (ngSubmit)="onSubmit()">
+  <div class = "input-div">
+      <label for="text"> Text:</label>
+      <input id="text" name="text" type = "text" required [(ngModel)] = "textToTranslate">
+  </div>
+  <div class = "input-div">
+    <label for="password"> Password:</label>
+    <input id="language" name="language" type = "text" required [(ngModel)] = "endLanguageCode">
+  </div>
+  <input type = "submit" value = "translation"/>
+</form>

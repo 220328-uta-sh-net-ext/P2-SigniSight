@@ -11,7 +11,16 @@ string connectionString = File.ReadAllText(connectionStringFilePath);
 var builder = WebApplication.CreateBuilder(args);
 
 ConfigurationManager config = builder.Configuration;
-
+var signiSightPolicy = "allowedOrigins";
+/*builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: signiSightPolicy,
+            policy =>
+            {
+                policy.WithOrigins("http://127.0.0.1:4200").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+            });
+});*/
+builder.Services.AddCors();
 builder.Services.AddAuthentication(option =>
 {
     option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -35,35 +44,15 @@ builder.Services.AddAuthentication(option =>
       };
 });
 builder.Services.AddMemoryCache();
-
-// Add services to the container.
-
-builder.Services.AddControllers(options =>
-    options.RespectBrowserAcceptHeader = true
-    )
-    .AddXmlSerializerFormatters();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddControllers(options =>
-    options.RespectBrowserAcceptHeader = true);
-
-//.AddXmlSerializerFormatters();
-
-builder.Services.AddMemoryCache();
-
-
-
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IRepo>(repo => new SqlRepo(config.GetConnectionString("connectionString")));
-
 builder.Services.AddScoped<ILogic, Logic>();
-
 
 var app = builder.Build();
 
-
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -71,9 +60,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors(x => x
+            .AllowAnyOrigin() //Allowing any origin until find fix
+            //.SetIsOriginAllowed("http://127.0.0.1:4200")
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            );
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
