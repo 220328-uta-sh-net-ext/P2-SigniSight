@@ -8,9 +8,10 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["SigniSightAPI/SigniSightAPI.csproj", "SigniSightAPI/"]
-COPY ["SigniSightBL/SigniSightBL.csproj", "SigniSightBL/"]
-COPY ["SigniSightDL/SigniSightDL.csproj", "SigniSightDL/"]
 COPY ["SigniSightModel/SigniSightModel.csproj", "SigniSightModel/"]
+COPY ["SigniSightDL/SigniSightDL.csproj", "SigniSightDL/"]
+COPY ["XUnitTest/XUnitTest.csproj", "XUnitTest/"]
+COPY ["SigniSightBL/SigniSightBL.csproj", "SigniSightBL/"]
 RUN dotnet restore "SigniSightAPI/SigniSightAPI.csproj"
 COPY . .
 WORKDIR "/src/SigniSightAPI"
