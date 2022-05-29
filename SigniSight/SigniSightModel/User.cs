@@ -12,6 +12,8 @@ namespace SigniSightModel
 
         public string Password { get; set; }
 
+        public string? Email { get; set; }
+
         public string AccountType { get; set; }
 
         public string LangSet { get; set; }
@@ -20,13 +22,14 @@ namespace SigniSightModel
         {
             Username = "LoremIpsum";
             Password = "Password";
+            Email = "SigniSightEmail@google.com";
             AccountType = "basic";
             LangSet = "English";
         }
 
         public override string ToString()
         {
-            return $" UserName - {Username}, Password - {Password}, LangSet - {LangSet}";
+            return $" UserName - {Username}, Password - {Password}, Email - {Email}, LangSet - {LangSet}";
         }
     }
 }

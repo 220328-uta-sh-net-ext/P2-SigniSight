@@ -3,6 +3,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using SigniSightDL;
 using SigniSightBL;
+using Microsoft.EntityFrameworkCore;
+using SigniSightDL_EF.Entities;
 
 //Connection string file path should be relative. It will break program if your path is different
 //string connectionStringFilePath = "../SigniSightDL/connection-string.txt";
@@ -47,11 +49,13 @@ builder.Services.AddMemoryCache();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<SigniSightContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SighniSight")));
 
 builder.Services.AddScoped<IRepo>(repo => new SqlRepo(config.GetConnectionString("connectionString")));
 builder.Services.AddScoped<ILogic, Logic>();
 
 var app = builder.Build();
+app.Logger.LogInformation("App Started");
 
 if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
