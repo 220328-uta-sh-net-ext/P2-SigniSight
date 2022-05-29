@@ -13,6 +13,7 @@ import { TranslationComponent } from './translation/translation.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule ,
+    FormsModule,
+    MatSlideToggleModule,
     HttpClientModule,
     BrowserAnimationsModule
   ],
