@@ -5,8 +5,8 @@ using SigniSightDL;
 using SigniSightBL;
 
 //Connection string file path should be relative. It will break program if your path is different
-string connectionStringFilePath = "../SigniSightDL/connection-string.txt";
-string connectionString = File.ReadAllText(connectionStringFilePath);
+//string connectionStringFilePath = "../SigniSightDL/connection-string.txt";
+//string connectionString = File.ReadAllText(connectionStringFilePath);
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -53,10 +53,14 @@ builder.Services.AddScoped<ILogic, Logic>();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json" ,"v1");
+
+    });
 }
 
 app.UseHttpsRedirection();
