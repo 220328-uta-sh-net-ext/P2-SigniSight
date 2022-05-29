@@ -8,20 +8,27 @@
     <div id="gallery"></div>
 
   </div>
-
-  <div id="translation-card" style="display:none"></div>
-
-  <button id="translate-button" onclick="translation()">TRANSLATE</button>
-</section>
-
 <form id = "translation" (ngSubmit)="onSubmit()">
   <div class = "input-div">
       <label for="text"> Text:</label>
       <input id="text" name="text" type = "text" required [(ngModel)] = "textToTranslate">
   </div>
   <div class = "input-div">
-    <label for="password"> Password:</label>
+    <label for="password"> Language:</label>
     <input id="language" name="language" type = "text" required [(ngModel)] = "endLanguageCode">
+    
+    <select name="cars" id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+
   </div>
-  <input type = "submit" value = "translation"/>
+  <!-- <input type = "submit" value = "translation"/> -->
 </form>
+  <div id="translation-card" style="display:none"></div>
+
+  <button id="translate-button" input type = "submit" value = "translation">TRANSLATE</button>
+</section>
+
