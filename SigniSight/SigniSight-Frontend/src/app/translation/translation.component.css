@@ -53,6 +53,11 @@ p {
   width: 300px;
 }
 
+.input-div{
+  text-align: center;
+  padding-bottom: 25px;
+}
+
 #translate-button {
   display: block;
   margin-top: 25px;
