@@ -17,5 +17,11 @@ export class NavbarComponent implements OnInit {
     console.log("constructor initialized");
   }
 
+  isDarkMode = false;
+
+  toggleSwitch() {
+    this.isDarkMode = !this.isDarkMode;
+  }
+
   ngOnInit(): void {}
 }
