@@ -17,15 +17,27 @@
   <div class = "input-div">
     <label for="language"> Language:</label>
     <input id="language" name="language" type = "text" required [(ngModel)] = "endLanguageCode">
-    
+  </div>
+
+  <div class = "input-div">
+    <label for="image-url">Image:</label>
+    <input id="image-url"  name="image-url" type = "text" >
+  </div>
+  
+  <div class = "input-div">
     <select name="cars" id="cars">
       <option value="volvo">Volvo</option>
       <option value="saab">Saab</option>
       <option value="mercedes">Mercedes</option>
       <option value="audi">Audi</option>
     </select>
-
   </div>
+<<<<<<< HEAD
+=======
+    
+  <!-- <input type = "submit" value = "translation"/> -->
+</form>
+>>>>>>> 20c689ecd4efefee7a1213203efe77d58eb9fcd5
   <div id="translation-card" style="display:none"></div>
 
   <button id="translate-button"  type = "submit" value = "translation">TRANSLATE</button>

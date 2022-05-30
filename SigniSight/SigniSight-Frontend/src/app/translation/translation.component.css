@@ -53,9 +53,21 @@ p {
   width: 300px;
 }
 
+label{
+  padding-right: 15px;
+}
+
 .input-div{
   text-align: center;
   padding-bottom: 25px;
+}
+
+input{
+  border-radius: 15px;
+}
+
+select{
+  border-radius: 15px;
 }
 
 #translate-button {

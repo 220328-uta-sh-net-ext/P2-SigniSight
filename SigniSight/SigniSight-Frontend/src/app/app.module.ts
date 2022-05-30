@@ -13,8 +13,12 @@ import { TranslationComponent } from './translation/translation.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+<<<<<<< HEAD
 import { OcrComponent } from './ocr/ocr.component';
 
+=======
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+>>>>>>> 20c689ecd4efefee7a1213203efe77d58eb9fcd5
 
 @NgModule({
   declarations: [
@@ -30,7 +34,8 @@ import { OcrComponent } from './ocr/ocr.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule ,
+    FormsModule,
+    MatSlideToggleModule,
     HttpClientModule,
     BrowserAnimationsModule
   ],
