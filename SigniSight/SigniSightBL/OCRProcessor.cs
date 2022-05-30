@@ -42,10 +42,10 @@ namespace SigniSightBL
             {
                 foreach (Line line in page.Lines)
                 {
-                    list += line.Text;
+                    list += line.Text + " ";
                 }
             }
-            return list;
+            return list.Trim();
         }
     }
 }

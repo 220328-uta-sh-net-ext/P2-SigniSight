@@ -8,13 +8,14 @@
     <div id="gallery"></div>
 
   </div>
+  
 <form id = "translation" (ngSubmit)="onSubmit()">
   <div class = "input-div">
       <label for="text"> Text:</label>
       <input id="text" name="text" type = "text" required [(ngModel)] = "textToTranslate">
   </div>
   <div class = "input-div">
-    <label for="password"> Language:</label>
+    <label for="language"> Language:</label>
     <input id="language" name="language" type = "text" required [(ngModel)] = "endLanguageCode">
     
     <select name="cars" id="cars">
@@ -25,10 +26,11 @@
     </select>
 
   </div>
-  <!-- <input type = "submit" value = "translation"/> -->
-</form>
   <div id="translation-card" style="display:none"></div>
 
-  <button id="translate-button" input type = "submit" value = "translation">TRANSLATE</button>
+  <button id="translate-button"  type = "submit" value = "translation">TRANSLATE</button>
+  <!-- <input type = "submit" value = "translation"/> -->
+</form>
+  
 </section>
 

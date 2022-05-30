@@ -4,12 +4,14 @@ import { HomePageComponent } from "./home-page/home-page.component";
 import { RouterModule } from "@angular/router";
 import { RosterComponent } from "./roster/roster.component";
 import { TranslationComponent } from "./translation/translation.component";
+import { OcrComponent } from "./ocr/ocr.component";
 
 const routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "home", component: HomePageComponent },
   { path: "roster", component: RosterComponent },
-  { path: "translation", component: TranslationComponent }
+  { path: "translation", component: TranslationComponent },
+  { path: "ocr", component: OcrComponent}
 ]
 
 @NgModule({

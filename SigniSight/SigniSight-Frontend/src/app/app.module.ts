@@ -13,6 +13,8 @@ import { TranslationComponent } from './translation/translation.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OcrComponent } from './ocr/ocr.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PersonComponent,
     RosterComponent,
     TranslationComponent,
-    FooterComponent
+    FooterComponent,
+    OcrComponent
   ],
   imports: [
     BrowserModule,
