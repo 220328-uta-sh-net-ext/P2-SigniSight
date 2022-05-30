@@ -22,9 +22,5 @@ RUN dotnet publish "SigniSightAPI.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-ADD ../SigniSightBL/TranslateKey.txt /app/SigniSightBL/TranslateKey.txt
-ADD ../SigniSightBL/TranslateLocation.txt /app/SigniSightBL/TranslateLocation.txt
-ADD ../SigniSightAPI/Controllers/OCRKey.txt /SigniSightAPI/Controllers/OCRKey.txt
-ADD ../SigniSightAPI/Controllers/OCREndpoint.txt /SigniSightAPI/Controllers/OCREndpoint.txt
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "SigniSightAPI.dll"]
