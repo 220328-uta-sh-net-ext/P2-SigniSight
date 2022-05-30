@@ -36,7 +36,7 @@ namespace SigniSightBL
                 results.Status == OperationStatusCodes.NotStarted));
 
             // Display the found text.
-            var list = ""; //HAVE TO CHANGE so words are separate
+            var list = "";
             var textUrlFileResults = results.AnalyzeResult.ReadResults;
             foreach (ReadResult page in textUrlFileResults)
             {
