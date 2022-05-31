@@ -9,16 +9,27 @@
 
   </div>
   
+  <form id = "translation" (ngSubmit)="ocr()">
+    <div class = "input-div">
+      <label for="image-url">Image url:</label>
+      <input id="image-url"  name="image-url" type = "text" required [(ngModel)] = "imageUrl">
+    </div>
+    <button id="translate-button"  type = "submit" value = "recognition">OCR</button>
+    <div> {{this.imageText}}
+    </div> 
+  </form>
+    
+ 
+
 <form id = "translation" (ngSubmit)="translate()">
   <div class = "input-div">
       <label for="text"> Text:</label>
-      <input id="text" name="text" type = "text" required [(ngModel)] = "textToTranslate">
+      <input id="text" name="text" type = "text" required [(ngModel)] = "textToTranslate" >
   </div>
   <!-- <div class = "input-div">
     <label for="language"> Language:</label>
     <input id="language" name="language" type = "text" required [(ngModel)] = "endLanguageCode">
   </div> -->
-
 
 
   <!-- <mat-form-field appearance="fill">
@@ -35,32 +46,23 @@
   </mat-form-field> -->
 
 
-
-
   <div class = "input-div">
+    <label for="language"> Translate to:</label>
     <select name="language" id="language" [(ngModel)] = "endLanguageCode">
       <option value="en">English</option>
       <option value="uk">Ukrainian</option>
       <option value="pl">Polish</option>
       <option value="hi">Hindi</option>
       <option value="gu">Gujarati</option>
-      <input id="language" name="language" type = "text" [(ngModel)] = "endLanguageCode">
     </select>
   </div>
   <div id="translation-card" style="display:none"></div>
 
   <button id="translate-button"  type = "submit" value = "translation">TRANSLATE</button>
-  
+  <div> {{this.translatedText}}
+  </div> 
 <!-- <p>{{this.translationService.text}}</p> -->
 
 </form>
-<form id = "translation" (ngSubmit)="ocr()">
-  <div class = "input-div">
-    <label for="image-url">Image:</label>
-    <input id="image-url"  name="image-url" type = "text" required [(ngModel)] = "imageUrl">
-  </div>
-  <button id="translate-button"  type = "submit" value = "recognition">OCR</button>
-</form>
-  
-</section>
 
+</section>

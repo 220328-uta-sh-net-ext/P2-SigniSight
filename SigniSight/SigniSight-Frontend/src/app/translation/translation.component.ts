@@ -12,32 +12,28 @@ export class TranslationComponent implements OnInit {
   textToTranslate:string = "";
   endLanguageCode:string = "";
   error:boolean = false;
+  translatedText:string = "";
+  
 
-  translate():string{
+  translate():void{
     this.translationService.translation(this.textToTranslate, this.endLanguageCode)
     .subscribe((data) =>{
-      //console.log(data)
-      //console.log(this.translationService.response)//[0].translations[0].translatedText[0].text)
-      // Let's store the data in our service's string
-      this.translationService.text = data[0].translations[0].text;
-      console.log(this.translationService.text)
-      // If we successfully login, let's redirect to the home page
-      //this.router.navigate(['home'])
+      this.translatedText = data[0].translations[0].text
     },
     (error) =>{
       console.log(error)
       // Makes error message appear through ngIf
       this.error = true;
     })
-    return this.translationService.text;
   }
 
   imageUrl:string = "";
-
+  imageText:string = "";
   ocr():void{
     this.translationService.recognition(this.imageUrl)
     .subscribe((data) =>{
       console.log(data)
+      this.imageText = data
       // If we successfully login, let's redirect to the home page
       //this.router.navigate(['home'])
     },
