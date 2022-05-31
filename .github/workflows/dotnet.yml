@@ -28,7 +28,7 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'signisight-frontend'
-        publish-profile: $
+        publish-profile: ${{ secrets.AZURE_FRONTEND }}
         package: ./SigniSight/SigniSight-Frontend
     - name: Cache SonarCloud packages
       uses: actions/cache@v1
