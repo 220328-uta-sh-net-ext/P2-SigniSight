@@ -34,7 +34,7 @@ jobs:
       with:
         app-name: 'signisight-frontend'
         publish-profile: ${{ secrets.AZURE_FRONTEND }}
-        package: ./dist/signi-sight-frontend
+        package: ./SigniSight-Frontend/dist/signi-sight-frontend
     - name: Cache SonarCloud packages
       uses: actions/cache@v1
       with:
