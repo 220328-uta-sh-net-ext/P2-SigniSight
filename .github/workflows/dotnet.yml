@@ -26,8 +26,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: npm install, build, and test
       run: |
-        npm install SigniSight/SigniSight-Frontend
-        npm run build SigniSight/SigniSight-Frontend
+        npm install ./SigniSight/SigniSight-Frontend
+        npm run build ./SigniSight/SigniSight-Frontend
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
