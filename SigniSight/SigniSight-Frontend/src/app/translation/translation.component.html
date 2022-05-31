@@ -1,12 +1,12 @@
 <section id="camera-area">
  
   <form class = "translation" (ngSubmit)="ocr()">
-    <div class = "input-div">
+    <div class = "input-div">  
+      <img src = {{this.imageUrl}} height="200px"><br/>
       <label for="image-url">Image url:</label>
       <input id="image-url"  name="image-url" type = "text" required [(ngModel)] = "imageUrl" >
-
-      <!-- <img [src]="url" alt="image preview "height="200px"><br/>
-      <input type="file" (change)="onInputURL($event)"> -->
+    
+      
 
     </div>
     <button id="translate-button"  type = "submit" value = "recognition">OCR</button>
