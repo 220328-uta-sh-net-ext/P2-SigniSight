@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigniSightModel", "SigniSig
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTest", "XUnitTest\XUnitTest.csproj", "{73ACB637-8D89-451E-BE6F-C20745B8D11D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigniSightDL_EF", "SigniSightDL_EF\SigniSightDL_EF.csproj", "{84552745-6F66-4795-8402-13659AD3F59F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigniSightDL_DB", "SigniSightDL_DB\SigniSightDL_DB.csproj", "{93E10741-58AB-4ABE-9FEB-27AC4F1333F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{73ACB637-8D89-451E-BE6F-C20745B8D11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73ACB637-8D89-451E-BE6F-C20745B8D11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73ACB637-8D89-451E-BE6F-C20745B8D11D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{84552745-6F66-4795-8402-13659AD3F59F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84552745-6F66-4795-8402-13659AD3F59F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84552745-6F66-4795-8402-13659AD3F59F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84552745-6F66-4795-8402-13659AD3F59F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93E10741-58AB-4ABE-9FEB-27AC4F1333F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E10741-58AB-4ABE-9FEB-27AC4F1333F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E10741-58AB-4ABE-9FEB-27AC4F1333F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E10741-58AB-4ABE-9FEB-27AC4F1333F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-﻿namespace SigniSightDL_EF
+﻿namespace SigniSightDL_DB
 {
     public class Class1
     {
