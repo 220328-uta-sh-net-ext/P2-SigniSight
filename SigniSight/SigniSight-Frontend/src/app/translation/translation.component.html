@@ -1,34 +1,46 @@
 <section id="camera-area">
-  <div id="drop-area">
-    <form class="my-form">
-      <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
-      <label class="button" for="fileElem">Select image</label>
-    </form>
+ 
+  <form class = "translation" (ngSubmit)="ocr()">
+    <div class = "input-div">  
+      <img src = {{this.imageUrl}} height="200px"><br/>
+      <label for="image-url">Image url:</label>
+      <input id="image-url"  name="image-url" type = "text" required [(ngModel)] = "imageUrl" >
+    
+      
 
-    <div id="gallery"></div>
+    </div>
+    <button id="translate-button"  type = "submit" value = "recognition">OCR</button>
+    <textarea id="image-text-card"> {{this.imageText}}
+    </textarea> 
+  </form>
+    
+ 
 
-  </div>
-<form id = "translation" (ngSubmit)="onSubmit()">
+<form class = "translation" (ngSubmit)="translate()">
   <div class = "input-div">
       <label for="text"> Text:</label>
-      <input id="text" name="text" type = "text" required [(ngModel)] = "textToTranslate">
+      <input id="text" name="text" type = "text" required [(ngModel)] = "textToTranslate" >
   </div>
+ 
+
+
   <div class = "input-div">
-    <label for="password"> Language:</label>
-    <input id="language" name="language" type = "text" required [(ngModel)] = "endLanguageCode">
-    
-    <select name="cars" id="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="audi">Audi</option>
+    <label for="language"> Translate to:</label>
+    <select name="language" id="language" [(ngModel)] = "endLanguageCode">
+      <option value="en">English</option>
+      <option value="uk">Ukrainian</option>
+      <option value="pl">Polish</option>
+      <option value="hi">Hindi</option>
+      <option value="gu">Gujarati</option>
     </select>
-
   </div>
-  <!-- <input type = "submit" value = "translation"/> -->
+
+
+  <button id="translate-button"  type = "submit" value = "translation">TRANSLATE</button>
+  <textarea id="translation-card"> {{this.translatedText}}
+  </textarea> 
+<!-- <p>{{this.translationService.text}}</p> -->
+
 </form>
-  <div id="translation-card" style="display:none"></div>
 
-  <button id="translate-button" input type = "submit" value = "translation">TRANSLATE</button>
 </section>
-

@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+
 @Component({
   selector: "navbar",
   templateUrl: "./navbar.component.html",
@@ -12,6 +13,12 @@ export class NavbarComponent implements OnInit {
 
   constructor(private router: Router) {
     console.log("constructor initialized");
+  }
+
+  isDarkMode = false;
+
+  toggleSwitch() {
+    this.isDarkMode = !this.isDarkMode;
   }
 
   ngOnInit(): void {}

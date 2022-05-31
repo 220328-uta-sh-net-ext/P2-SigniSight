@@ -5,24 +5,10 @@ import { Observable, throwError, catchError } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class TranslationService {
+export class OcrService {
 
   text:string = "";
 
-  //?textToTranslate=hi&endLanguageCode=ru
-  translation(textToTranslate:string, endLanguageCode:string):Observable<any>{
-    return this.http.post("https://signisight.azurewebsites.net/Translate?textToTranslate=" + textToTranslate +
-    "&endLanguageCode="+ endLanguageCode, JSON.stringify({textToTranslate, endLanguageCode}),
-    // We need to add headers to specify content type
-    //{headers: {'Content-Type':'text/plain'}}
-    )
-    .pipe(
-      catchError((e) =>{
-        return throwError(e)
-      }
-     
-    ))
-  }
   recognition(imageUrl:string):Observable<any>{
     return this.http.post("https://signisight.azurewebsites.net/OCR?imageUrl=" + imageUrl,imageUrl,
     // We need to add headers to specify content type
@@ -34,6 +20,5 @@ export class TranslationService {
       }
     ))
   }
-
   constructor(private http:HttpClient) { }
 }
