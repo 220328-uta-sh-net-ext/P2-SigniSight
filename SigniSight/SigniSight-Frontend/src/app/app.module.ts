@@ -18,7 +18,6 @@ import { OcrComponent } from './ocr/ocr.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { FileuploadComponent } from './fileupload/fileupload.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +28,7 @@ import { FileuploadComponent } from './fileupload/fileupload.component';
     RosterComponent,
     TranslationComponent,
     FooterComponent,
-    OcrComponent,
-    FileuploadComponent,
+    OcrComponent
   ],
   imports: [
     BrowserModule,
