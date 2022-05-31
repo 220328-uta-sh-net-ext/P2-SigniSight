@@ -10,7 +10,7 @@ export class OcrService {
   text:string = "";
 
   recognition(imageUrl:string):Observable<any>{
-    return this.http.post("https://localhost:7073/OCR?imageUrl=" + imageUrl,imageUrl,
+    return this.http.post("https://signisight.azurewebsites.net/OCR?imageUrl=" + imageUrl,imageUrl,
     // We need to add headers to specify content type
     //{headers: {'Content-Type':'text/plain'}}
     {responseType: 'text'})

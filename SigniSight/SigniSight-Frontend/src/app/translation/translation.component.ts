@@ -18,6 +18,7 @@ export class TranslationComponent implements OnInit {
   translate():void{
     this.translationService.translation(this.textToTranslate, this.endLanguageCode)
     .subscribe((data) =>{
+      console.log(data[0].translations[0].text)
       this.translatedText = data[0].translations[0].text
     },
     (error) =>{
