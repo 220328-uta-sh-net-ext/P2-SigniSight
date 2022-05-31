@@ -47,5 +47,36 @@ namespace SigniSightBL
             }
             return list.Trim();
         }
+        public static async Task<string> RecognizePrintedTextLocal(ComputerVisionClient client)
+        {
+            var list = "";
+            string localImage = @"C:\Users\shado\Desktop\Учло\albert-einstein-quotes-01-scaled.jpg";
+            using (Stream stream = File.OpenRead(localImage))
+            {
+                // Get the recognized text
+                OcrResult localFileOcrResult = await client.RecognizePrintedTextInStreamAsync(true, stream);
+
+                foreach (var localRegion in localFileOcrResult.Regions)
+                {
+                    foreach (var line in localRegion.Lines)
+                    {
+                        foreach (var word in line.Words)
+                        {
+                            list += word.Text + " ";
+                        }
+                    }
+                }
+            }
+            return list.Trim();
+        }
+        static byte[] GetImageAsByteArray(string imageFilePath)
+        {
+            using (FileStream fileStream =
+                new FileStream(imageFilePath, FileMode.Open, FileAccess.Read))
+            {
+                BinaryReader binaryReader = new BinaryReader(fileStream);
+                return binaryReader.ReadBytes((int)fileStream.Length);
+            }
+        }
     }
 }
