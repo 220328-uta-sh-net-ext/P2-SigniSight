@@ -1,49 +1,27 @@
 <section id="camera-area">
-  <div id="drop-area">
-    <form class="my-form">
-      <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
-      <label class="button" for="fileElem">Select image</label>
-    </form>
-
-    <div id="gallery"></div>
-
-  </div>
-  
-  <form id = "translation" (ngSubmit)="ocr()">
+ 
+  <form class = "translation" (ngSubmit)="ocr()">
     <div class = "input-div">
       <label for="image-url">Image url:</label>
-      <input id="image-url"  name="image-url" type = "text" required [(ngModel)] = "imageUrl">
+      <input id="image-url"  name="image-url" type = "text" required [(ngModel)] = "imageUrl" >
+
+      <!-- <img [src]="url" alt="image preview "height="200px"><br/>
+      <input type="file" (change)="onInputURL($event)"> -->
+
     </div>
     <button id="translate-button"  type = "submit" value = "recognition">OCR</button>
-    <div> {{this.imageText}}
-    </div> 
+    <textarea id="image-text-card"> {{this.imageText}}
+    </textarea> 
   </form>
     
  
 
-<form id = "translation" (ngSubmit)="translate()">
+<form class = "translation" (ngSubmit)="translate()">
   <div class = "input-div">
       <label for="text"> Text:</label>
       <input id="text" name="text" type = "text" required [(ngModel)] = "textToTranslate" >
   </div>
-  <!-- <div class = "input-div">
-    <label for="language"> Language:</label>
-    <input id="language" name="language" type = "text" required [(ngModel)] = "endLanguageCode">
-  </div> -->
-
-
-  <!-- <mat-form-field appearance="fill">
-    <mat-label>Languages</mat-label>
-    <mat-select required [(ngModel)] = "endLanguageCode" [formControl]="toppings" multiple>
-      <mat-select-trigger>
-        {{toppings.value ? toppings.value[0] : ''}}
-        <span *ngIf="toppings.value?.length > 1" class="translation">
-          (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
-        </span>
-      </mat-select-trigger>
-      <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
-    </mat-select>
-  </mat-form-field> -->
+ 
 
 
   <div class = "input-div">
@@ -56,11 +34,11 @@
       <option value="gu">Gujarati</option>
     </select>
   </div>
-  <div id="translation-card" style="display:none"></div>
+
 
   <button id="translate-button"  type = "submit" value = "translation">TRANSLATE</button>
-  <div> {{this.translatedText}}
-  </div> 
+  <textarea id="translation-card"> {{this.translatedText}}
+  </textarea> 
 <!-- <p>{{this.translationService.text}}</p> -->
 
 </form>
