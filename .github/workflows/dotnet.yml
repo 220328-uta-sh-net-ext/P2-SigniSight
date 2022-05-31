@@ -33,7 +33,7 @@ jobs:
       with:
         app-name: 'signisight-frontend'
         publish-profile: $
-        package: ./SigniSight
+        package: SigniSight/SigniSight-Frontend
     - name: Cache SonarCloud packages
       uses: actions/cache@v1
       with:
