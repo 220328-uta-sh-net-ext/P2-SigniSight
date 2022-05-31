@@ -28,7 +28,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     RosterComponent,
     TranslationComponent,
     FooterComponent,
-    OcrComponent,
+    OcrComponent
   ],
   imports: [
     BrowserModule,

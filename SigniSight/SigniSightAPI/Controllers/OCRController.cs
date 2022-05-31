@@ -27,6 +27,12 @@ namespace SigniSightAPI.Controllers
             var list = await OCRProcessor.ReadFileUrl(client, imageUrl);
             return Ok(list);
         }
+        [HttpPost("OCRFile")]
+        public async Task<ActionResult<string>> MakeOCRRequest2()
+        {
+            var list = await OCRProcessor.RecognizePrintedTextLocal(client);
+            return Ok(list);
+        }
     }
 }
 
