@@ -18,6 +18,7 @@ import { OcrComponent } from './ocr/ocr.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { FileuploadComponent } from './fileupload/fileupload.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     TranslationComponent,
     FooterComponent,
     OcrComponent,
+    FileuploadComponent,
   ],
   imports: [
     BrowserModule,

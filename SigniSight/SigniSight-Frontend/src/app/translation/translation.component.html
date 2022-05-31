@@ -8,10 +8,11 @@
     <div id="gallery"></div>
 
   </div>
-  
+
   <form id = "translation" (ngSubmit)="ocr()">
     <div class = "input-div">
       <label for="image-url">Image url:</label>
+      <img src = {{this.imageUrl}}>
       <input id="image-url"  name="image-url" type = "text" required [(ngModel)] = "imageUrl">
     </div>
     <button id="translate-button"  type = "submit" value = "recognition">OCR</button>
