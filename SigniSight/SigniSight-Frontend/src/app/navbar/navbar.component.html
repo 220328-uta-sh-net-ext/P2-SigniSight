@@ -1,4 +1,4 @@
-<div class = "navbar">
+<div class = "navbar" [ngClass]="isDarkMode? 'dark-theme' : 'light-theme'">
     <ul class = "nav-list">
         <li class = "nav-item">
             <a class = "nav-link" routerLink = "home">
@@ -19,16 +19,5 @@
             <button id="add-button" (click)= "navigateLogin()">Login</button>
         </li> -->
     </ul>
-    <button class="button" id="light" style="display: none" onclick="lightMode()">
-        <span>
-          <i class="fa-solid fa-sun"></i>
-          Light Mode
-        </span>
-      </button>
-      <button class="button" id="dark" onclick="darkMode()">
-        <span>
-          <i class="fa-solid fa-moon"></i>
-          Dark Mode
-        </span>
-      </button>
+    <!-- <mat-slide-toggle class="light-switch" (click)="toggleSwitch()">Light Trigger</mat-slide-toggle> -->
 </div>

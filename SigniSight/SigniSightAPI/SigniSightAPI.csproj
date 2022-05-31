@@ -38,8 +38,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SigniSightBL\SigniSightBL.csproj" />
-    <ProjectReference Include="..\SigniSightDL\SigniSightDL.csproj" />    
 	  <ProjectReference Include="..\SigniSightDL_DB\SigniSightDL_DB.csproj" />
+    <ProjectReference Include="..\SigniSightDL\SigniSightDL.csproj" />
     <ProjectReference Include="..\SigniSightModel\SigniSightModel.csproj" />
     <ProjectReference Include="..\XUnitTest\XUnitTest.csproj" />
 

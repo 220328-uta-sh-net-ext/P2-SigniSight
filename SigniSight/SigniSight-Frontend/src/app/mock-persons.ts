@@ -22,9 +22,4 @@ export const PERSON : IPerson[] = [
         interest: "Immigrant from Ukraine."
       }
     
-    
-    
-    
-
-
 ]
