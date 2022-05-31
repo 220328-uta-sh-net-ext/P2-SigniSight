@@ -24,7 +24,16 @@ jobs:
       with:
         node-version: '16.x'
     - uses: actions/checkout@v3
-    
+    - name: npm install, build, and test
+      run: |
+        npm install
+        npm run build --if-present
+    - name: 'Deploy to Azure Web App'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'signisight-frontend'
+        publish-profile: $
+        package: ./SigniSight
     - name: Cache SonarCloud packages
       uses: actions/cache@v1
       with:
@@ -66,16 +75,7 @@ jobs:
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"220328-uta-sh-net-ext_P2-SigniSight" /o:"220328-uta-sh-net-ext" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           dotnet build ${{env.WORKING_DIRECTORY}}
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
-    - name: npm install, build, and test
-      run: |
-        npm install
-        npm run build --if-present
-    - name: 'Deploy to Azure Web App'
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: 'signisight-frontend'
-        publish-profile: $
-        package: ./SigniSight
+
       
   docker-image-build:
     runs-on: ubuntu-latest
