@@ -43,3 +43,29 @@ Our project "SigniSight" is to create a translation application. This applicatio
 
   - [Microsoft Computer Vision API](https://centraluseuap.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2/operations/56f91f2e778daf14a499f20d)
     - Use machine learning to understand your images with industry-leading prediction accuracy Train machine learning models that classify images by your custom labels using AutoML Vision. Detect objects and faces, read handwriting, and build valuable image metadata with Vision API
+
+## SigniSight Application
+
+### Welcome Page
+
+<img src="SigniSight/Images\Website-images\Signi-1.png" width="900"/>
+
+### About our Team
+
+<img src="SigniSight/Images\Website-images\Signi-2.png" width="900"/>
+
+### About our Team
+
+<img src="SigniSight/Images\Website-images\Signi-3.png" width="900"/>
+
+### Translation and OCR Page
+
+<img src="SigniSight/Images\Website-images\Signi-4.png" width="900"/>
+
+### Translating image and text
+
+<img src="SigniSight/Images\Website-images\Signi-5.png" width="900"/>
+
+### Swagger
+
+<img src="SigniSight/Images\Website-images\Swagger-image-1.png" width="900"/>
