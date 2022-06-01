@@ -16,7 +16,7 @@ namespace SigniSightAPI.Controllers
 
         public TranslatorController(ILogger<TranslatorController> logger)
         {
-            _logger = logger;
+            this._logger = logger;
         }
         //[Authorize]
         //[EnableCors("signiSightPolicy")]
