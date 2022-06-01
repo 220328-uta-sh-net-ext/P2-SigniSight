@@ -19,3 +19,10 @@ https://i.etsystatic.com/17879026/r/il/ac6a55/1849355028/il_fullxfull.1849355028
 https://ih1.redbubble.net/image.1148434625.6245/mp,504x498,matte,f8f8f8,t-pad,600x600,f8f8f8.u2.jpg
 
 https://i.pinimg.com/originals/da/ec/da/daecda0d016dcd5633b126dc728a70d3.png
+
+## Handwritten English:
+https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/08/handwriting-ocr.jpg
+
+## Ukrainian poems
+https://present5.com/presentation/306215873_439311579/image-6.jpg
+https://svitppt.com.ua/images/35/34697/960/img9.jpg

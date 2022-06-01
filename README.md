@@ -1,6 +1,6 @@
 # SigniSight
 
-## Team Name
+## Team Alchemy
 
     - Vladimir Shnyakin
     - Briceson Roy
@@ -11,7 +11,7 @@
 
 Our project "SigniSight" is to create a translation application. This application will use the camera to scan words throughout the world and translate them based on the language you understand. The idea is that if the user goes to another country like Japan/China, the user can scan the symbols and words to read them in their own language. Currently our application allows us to translate text into another language and print out the words from a image so that it can be translated. It can be further developed to improve the application to allow for languages that are written or voiced by a user and give the user a translation by voice or text. Even further we can potentially use the words that are translated to give options to our user based on the words. For example, if the word is a food item, the user can search that item from a recipe or fact. It can have lots of possible features but our group will first focus on building a translation app that successfully works with our initial goal of translating words around the world.
 
-## Tech Stack (feel free to add more)
+## Tech Stack
 
 - Backend
   - C#
