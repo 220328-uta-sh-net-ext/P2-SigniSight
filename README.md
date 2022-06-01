@@ -44,6 +44,21 @@ Our project "SigniSight" is to create a translation application. This applicatio
   - [Microsoft Computer Vision API](https://centraluseuap.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2/operations/56f91f2e778daf14a499f20d)
     - Use machine learning to understand your images with industry-leading prediction accuracy Train machine learning models that classify images by your custom labels using AutoML Vision. Detect objects and faces, read handwriting, and build valuable image metadata with Vision API
 
+## Getting Started 
+
+Commands to run the application
+* use this command to copy repository: Git Clone https://github.com/220328-uta-sh-net-ext/P2-SigniSight.git4
+* To run on the API open the sln program in the API folder in Visual Studio
+* Build the solution using "dotnet build" or visual studio
+* Run the application using by first going to the API folder using "cd SigniSightAPI"
+* Run the program use viusal studio 
+
+* To run our frontend, first go to the SigniSight-Frontend folder using cd command
+* Then use "npm install"
+* Next use "ng build"
+* Lastly use "ng serve -o
+* Enjoy our application
+
 ## SigniSight Application
 
 ### Welcome Page
