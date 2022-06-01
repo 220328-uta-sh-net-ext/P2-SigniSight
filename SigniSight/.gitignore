@@ -1,5 +1,6 @@
 Confidential.txt
 connection-string.txt
+
 appsettings.json
 appsettings.Development.json
 # Created by https://www.toptal.com/developers/gitignore/api/dotnetcore,visualstudiocode,csharp,visualstudio

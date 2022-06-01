@@ -12,64 +12,24 @@ using Serilog;
 using SigniSightAPI;
 
 
+var builder = WebApplication.CreateBuilder();
 
-var builder = WebApplication.CreateBuilder(args);
-IConfigurationRoot configuration = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true).Build();
+Log.Logger = new LoggerConfiguration().CreateBootstrapLogger();
 
-Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger(); {
+builder.Host.UseSerilog(((ctx, lc) => lc
 
-    CreateHostBuilder(args).Build().Run();
-   /* builder.Host.UseSerilog();
-    var apps = builder.Build();*/
-
-}
-
-static IHostBuilder CreateHostBuilder(string[] args) =>
-
-    Host.CreateDefaultBuilder(args)
-        .ConfigureWebHostDefaults(webBuilder =>
-        {
-            webBuilder.UseStartup<Startup>().UseSerilog();
-        });
+.ReadFrom.Configuration(ctx.Configuration)));
 
 
+/*Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .CreateBootstrapLogger();
+*/
+ConfigurationManager config = builder.Configuration;
 
-
-    ConfigurationManager config = builder.Configuration;
-    var signiSightPolicy = "allowedOrigins";
-    /*builder.Services.AddCors(options =>
-    {
-        options.AddPolicy(name: signiSightPolicy,
-                policy =>
-                {
-                    policy.WithOrigins("http://127.0.0.1:4200").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
-                });
-    });*/
-/*    builder.Services.AddCors();
-    builder.Services.AddAuthentication(option =>
-    {
-        option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-        option.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-
-    }).AddJwtBearer(o =>
-        {
-
-            var key = Encoding.UTF8.GetBytes(config["JWT:Key"]);
-            o.SaveToken = true;
-            o.TokenValidationParameters = new TokenValidationParameters
-
-            {
-                ValidateIssuerSigningKey = true,
-                ValidIssuer = config["JWT:Key"],
-                ValidAudience = config["JWT:Audience"],
-                IssuerSigningKey = new SymmetricSecurityKey(key),
-                ValidateLifetime = true,
-                ValidateIssuer = false,
-                ValidateAudience = false,
-            };
-        });*/
-    builder.Services.AddMemoryCache();
+builder.Services.AddMemoryCache();
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
@@ -79,10 +39,12 @@ static IHostBuilder CreateHostBuilder(string[] args) =>
     builder.Services.AddScoped<ILogic, Logic>();
 
     var app = builder.Build();
+    app.UseSerilogRequestLogging();
     app.Logger.LogInformation("App Started");
 
     if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
     {
+        app.UseDeveloperExceptionPage();
         app.UseSwagger();
         app.UseSwaggerUI(options =>
         {
@@ -90,8 +52,14 @@ static IHostBuilder CreateHostBuilder(string[] args) =>
 
         });
     }
+    if (!app.Environment.IsDevelopment())
+    {
+        app.UseExceptionHandler("/Error");
+        app.UseHsts();
+    }
 
-    app.UseHttpsRedirection();
+
+app.UseHttpsRedirection();
     app.UseCors(x => x
                 .AllowAnyOrigin() //Allowing any origin until find fix
                                   //.SetIsOriginAllowed("http://127.0.0.1:4200")
@@ -101,4 +69,5 @@ static IHostBuilder CreateHostBuilder(string[] args) =>
     app.UseAuthorization();
     app.MapControllers();
     app.Run();
+
 
