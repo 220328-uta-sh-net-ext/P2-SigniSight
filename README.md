@@ -84,3 +84,7 @@ Commands to run the application
 ### Swagger
 
 <img src="SigniSight/Images\Website-images\Swagger-image-1.png" width="900"/>
+
+## License
+
+This project uses the following license:[<MIT_License>](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).
