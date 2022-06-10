@@ -10,7 +10,7 @@ using SigniSightBL;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using SigniSightAPI;
-
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder();
 
@@ -34,10 +34,10 @@ builder.Services.AddMemoryCache();
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
     //builder.Services.AddDbContext<SigniSightContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SighniSight")));
-
+    
     builder.Services.AddScoped<IRepo>(repo => new SqlRepo(config.GetConnectionString("connectionString")));
     builder.Services.AddScoped<ILogic, Logic>();
-
+    
     var app = builder.Build();
     app.UseSerilogRequestLogging();
     app.Logger.LogInformation("App Started");

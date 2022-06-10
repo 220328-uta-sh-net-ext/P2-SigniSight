@@ -3,7 +3,7 @@ using Microsoft.Azure.CognitiveServices.Vision.ComputerVision;
 using Serilog;
 using SigniSightBL;
 using Microsoft.Extensions.Logging;
-
+using Microsoft.Extensions.Configuration;
 namespace SigniSightAPI.Controllers
 {
     
@@ -17,10 +17,11 @@ namespace SigniSightAPI.Controllers
             _logger = logger;
         }
 
-        static string subscriptionKeyFilePath = "../SigniSightAPI/Controllers/OCRKey.txt";
-        static string subscriptionKey = System.IO.File.ReadAllText(subscriptionKeyFilePath);
-        static string endpointFilePath = "../SigniSightAPI/Controllers/OCREndpoint.txt";
-        static string endpoint = System.IO.File.ReadAllText(endpointFilePath);
+
+        static string subscriptionKey = Environment.GetEnvironmentVariable("ocrkey");
+
+
+        static string endpoint = Environment.GetEnvironmentVariable("ocrend");
         ComputerVisionClient client = Authenticate(endpoint, subscriptionKey);
         public static ComputerVisionClient Authenticate(string endpoint, string key)
         {
